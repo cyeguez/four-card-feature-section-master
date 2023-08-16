@@ -9,10 +9,88 @@ body {
   min-height: 100vh;
   font-size: 15px;
   font-family: "Poppins";
+  position: relative;
+}
+
+.header__container {
+  margin: 93px auto;
+  padding-inline: 40px;
+  font-weight: 400;
+  border: solid 1px red;
+}
+.header__container h1 {
+  font-size: 17px;
+  color: hsl(229, 6%, 66%);
+  font-weight: 200;
+  line-height: 30px;
+}
+.header__container h1 span {
+  color: hsl(234, 12%, 34%);
+  font-weight: 700;
+}
+.header__container p {
+  margin-top: 32px;
+  font-weight: 700;
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+}
+
+.card__container {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 80px auto;
+  gap: 25px;
+  padding-inline: 32px;
+  border: solid red 1px;
+}
+.card__container .card {
+  width: 311px;
+  height: 225px;
+  padding: 30px;
+  position: relative;
+}
+.card__container .card h3 {
+  font-weight: 700;
+  color: hsl(234, 12%, 34%);
+}
+.card__container .card p {
+  margin-top: 18px;
+  font-weight: 700;
+  color: hsl(229, 6%, 66%);
+  line-height: 30px;
+  font-size: 12px;
+}
+.card__container .card img {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+.card__container .card--blue {
+  border-radius: 5px;
+  border-top: 5px solid hsl(212, 86%, 64%);
+  box-shadow: 5px 5px 15px rgba(76, 114, 131, 0.8039215686), -5px -5px 15px rgba(76, 114, 131, 0.8039215686);
+}
+.card__container .card--red {
+  border-radius: 5px;
+  border-top: 5px solid hsl(0, 78%, 62%);
+  box-shadow: 5px 5px 15px rgba(76, 114, 131, 0.8039215686), -5px -5px 15px rgba(76, 114, 131, 0.8039215686);
+}
+.card__container .card--orange {
+  border-radius: 5px;
+  border-top: 5px solid hsl(34, 97%, 64%);
+  box-shadow: 5px 5px 15px rgba(76, 114, 131, 0.8039215686), -5px -5px 15px rgba(76, 114, 131, 0.8039215686);
+}
+.card__container .card--cyan {
+  border-radius: 5px;
+  border-top: 5px solid hsl(180, 62%, 55%);
+  box-shadow: 5px 5px 15px rgba(76, 114, 131, 0.8039215686), -5px -5px 15px rgba(76, 114, 131, 0.8039215686);
 }
 
 footer {
-  position: absolute;
   width: 100%;
   bottom: 0;
   margin: 0 auto;
@@ -23,4 +101,6 @@ footer .attribution {
 }
 footer .attribution a {
   color: hsl(228, 45%, 44%);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+@use "./var" as v;
+@mixin tablet {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin border($color) {
+  border-radius: 5px;
+  border-top: 5px solid $color;
+  box-shadow: 5px 5px 15px #4c7283cd , -5px -5px 15px #4c7283cd;
+
+
+}

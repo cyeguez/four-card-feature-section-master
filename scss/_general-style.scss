@@ -10,4 +10,5 @@ body {
   min-height: 100vh;
   font-size: 15px;
   font-family: map-get(var.$font, poppins);
+  position: relative;
 }

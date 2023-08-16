@@ -1,2 +1,53 @@
-@use '../screen' as r;
+@use "../utils" as u;
+@use "../var" as v;
+.card__container {
+  width: 100%;
+  max-width: 1600px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  margin: 80px auto;
+  gap: 25px;
+  padding-inline: 32px;
+  border: solid red 1px;
+  
+ 
+  .card {
+    width: 311px;
+    height: 225px;
+    padding: 30px;
+    position: relative;
 
+    h3 {
+      font-weight: 700;
+      color: map-get($map: v.$colors, $key: darkBlue);
+    }
+
+    p {
+      margin-top: 18px;
+      font-weight: 700;
+      color: map-get($map: v.$colors, $key: grayishBlue);
+      line-height: 30px;
+      font-size: 12px;
+    }
+
+    & img {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+    }
+  }
+  .card--blue {
+    @include u.border(map-get(v.$colors, c-blue));
+  }
+  .card--red {
+    @include u.border(map-get(v.$colors, c-red));
+  }
+  .card--orange {
+    @include u.border(map-get(v.$colors, c-orange));
+  }
+  .card--cyan {
+    @include u.border(map-get(v.$colors, c-cyan));
+  }
+}

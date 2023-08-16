@@ -1,2 +1,28 @@
-@use '../var' as v;
+@use "../var" as v;
+@use "../utils" as u;
 
+.header__container {
+  margin: 93px auto;
+  padding-inline: 40px;
+  font-weight: 400;
+  border: solid 1px red;
+
+  h1 {
+    font-size: 17px;
+    color: map-get($map: v.$colors, $key: grayishBlue);
+    font-weight: 200;
+    line-height: 30px;
+
+    span {
+      color: map-get($map: v.$colors, $key: darkBlue);
+      font-weight: 700;
+    }
+  }
+
+  p {
+    margin-top: 32px;
+    font-weight: 700;
+    color: map-get($map: v.$colors, $key: grayishBlue);
+    font-size: 12px;
+  }
+}
