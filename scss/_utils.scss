@@ -14,7 +14,7 @@
 @mixin border($color) {
   border-radius: 5px;
   border-top: 5px solid $color;
-  box-shadow: 5px 5px 15px #4c7283cd , -5px -5px 15px #4c7283cd;
+  box-shadow: 5px 5px 25px #e9eef1cd , -5px -5px 25px #e9eef1cd;
 
 
 }

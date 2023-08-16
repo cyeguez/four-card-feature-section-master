@@ -2,16 +2,22 @@
 @use "../utils" as u;
 
 .header__container {
-  margin: 93px auto;
+  width: 100%;
+  margin-top: 93px;
   padding-inline: 40px;
   font-weight: 400;
-  border: solid 1px red;
+  max-width: 600px;
+  margin-inline: auto;
+  
+ 
 
   h1 {
     font-size: 17px;
     color: map-get($map: v.$colors, $key: grayishBlue);
     font-weight: 200;
     line-height: 30px;
+    max-width: 400px;
+    margin-inline: auto;
 
     span {
       color: map-get($map: v.$colors, $key: darkBlue);
@@ -20,9 +26,13 @@
   }
 
   p {
+    
     margin-top: 32px;
-    font-weight: 700;
+    font-weight: 500;
     color: map-get($map: v.$colors, $key: grayishBlue);
     font-size: 12px;
+    
+    
+    
   }
 }

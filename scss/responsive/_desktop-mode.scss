@@ -1,0 +1,53 @@
+@use "../var" as v;
+@use "../utils" as u;
+
+@media screen and (min-width: 1024px) {
+  //**--- Header styles---**//
+  .header__container {
+    
+    height: auto;
+    margin-bottom: -100px;
+   
+    h1 {
+      font-size: 25px;
+      padding-left: 33px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  //**--- Main styles---**//
+
+  .card__container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 200px);
+
+    & .card--red {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      margin-top: 205px;
+    }
+    & .card--cyan {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin-left: -110px;
+    }
+    & .card--orange {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      margin-top: -205px;
+      
+    }
+    & .card--blue {
+      
+
+      grid-column: 3/4;
+      grid-row: 2/3;
+      margin-left: 110px;
+    }
+  }
+}

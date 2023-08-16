@@ -10,11 +10,12 @@
   margin: 80px auto;
   gap: 25px;
   padding-inline: 32px;
-  border: solid red 1px;
+ 
   
  
   .card {
     width: 311px;
+    max-width: 350px;
     height: 225px;
     padding: 30px;
     position: relative;
@@ -28,13 +29,13 @@
       margin-top: 18px;
       font-weight: 700;
       color: map-get($map: v.$colors, $key: grayishBlue);
-      line-height: 30px;
+      line-height: 25px;
       font-size: 12px;
     }
 
     & img {
       position: absolute;
-      bottom: 30px;
+      bottom: 18px;
       right: 30px;
     }
   }
