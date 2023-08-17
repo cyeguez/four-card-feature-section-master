@@ -125,6 +125,7 @@ footer .attribution a {
     text-align: center;
   }
   .card__container {
+    min-height: 50vh;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 250px);
